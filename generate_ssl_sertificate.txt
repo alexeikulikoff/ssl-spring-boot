@@ -1,0 +1,12 @@
+
+
+keytool -list -v -storetype pkcs12 -keystore keystore.p12 
+
+openssl pkcs12 -export -in commercial.crt -inkey commercial.key -out keystore.p12 -name tomcat -CAfile commercial_ca.crt -caname tomcat
+
+
+
+
+
+
+
